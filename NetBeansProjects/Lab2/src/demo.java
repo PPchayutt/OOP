@@ -12,12 +12,17 @@ import java.util.*;
 public class demo {
 
     public static void main(String[] args) {
-        int num1 = 5, num2 = 10;
-        if (((++num1+10)>0)&&(6+(--num2)>10)) {
-            System.out.println("(A):"+ num1 + "|" + num2);
+        String fruit = "Banana";
+        int priceX = 32;
+        int priceY = 64;
+        if(fruit.length() == 6) {
+            if (priceX * 2 > priceY) {
+                System.out.print("A");
+            } else {
+                System.out.print("B");
+            }
         } else {
-            System.out.println("(B):"+ num1 + "|" + num2);
-        }
-        System.out.print("End");
+            System.out.print("C");
+        } 
     }
 }
