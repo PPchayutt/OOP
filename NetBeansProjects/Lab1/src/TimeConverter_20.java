@@ -8,12 +8,16 @@
  * @author pitch
  */
 import java.util.*;
-public class YearCalculate {
+public class TimeConverter_20 {
     public static void main(String[] args) {
-        int AD;
+        double hours, mins, secs, totalmins;
         Scanner input = new Scanner(System.in);
-        int BE = input.nextInt();
-        AD = BE - 543;
-        System.out.println(AD);
+        System.out.print("Hours : ");
+        hours = input.nextDouble();
+        System.out.print("Mins : ");
+        mins = input.nextDouble();
+        totalmins = (hours * 60) + mins;
+        secs = totalmins * 60;
+        System.out.println("Secs = " + secs);
     }
 }

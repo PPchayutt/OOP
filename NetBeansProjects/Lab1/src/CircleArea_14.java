@@ -5,15 +5,15 @@
 
 /**
  *
- * @author pitch
+ * @author OPTO
  */
 import java.util.*;
-public class SqareArea {
+public class CircleArea_14 {
     public static void main(String[] args) {
         double area;
         Scanner input = new Scanner(System.in);
-        double side = input.nextDouble();
-        area = side * side;
+        double radius = input.nextDouble();
+        area = Math.PI  * (radius * radius);
         System.out.println(area);
         }
 }

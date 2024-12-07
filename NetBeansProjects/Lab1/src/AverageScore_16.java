@@ -8,12 +8,14 @@
  * @author pitch
  */
 import java.util.*;
-public class FuelPrice {
+public class AverageScore_16 {
     public static void main(String[] args) {
-        double totalPrice;
+        double average;
         Scanner input = new Scanner(System.in);
-        double litre = input.nextDouble();
-        totalPrice = litre * 30;
-        System.out.println(totalPrice);
+        int x = input.nextInt();
+        int y = input.nextInt();
+        int z = input.nextInt();
+        average = (x + y + z) / 3;
+        System.out.println(average);
     }
 }

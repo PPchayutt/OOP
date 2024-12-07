@@ -8,14 +8,12 @@
  * @author pitch
  */
 import java.util.*;
-public class AverageScore {
+public class YearCalculate_15 {
     public static void main(String[] args) {
-        double average;
+        int AD;
         Scanner input = new Scanner(System.in);
-        int x = input.nextInt();
-        int y = input.nextInt();
-        int z = input.nextInt();
-        average = (x + y + z) / 3;
-        System.out.println(average);
+        int BE = input.nextInt();
+        AD = BE - 543;
+        System.out.println(AD);
     }
 }

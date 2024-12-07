@@ -8,13 +8,12 @@
  * @author pitch
  */
 import java.util.*;
-public class TaxCalculate {
+public class SqareArea_18 {
     public static void main(String[] args) {
-        double totalPrice, price;
+        double area;
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter price: ");
-        price = input.nextDouble();
-        totalPrice = price + (price * 0.07);
-        System.out.println("Total price is " + totalPrice);
-    }
+        double side = input.nextDouble();
+        area = side * side;
+        System.out.println(area);
+        }
 }

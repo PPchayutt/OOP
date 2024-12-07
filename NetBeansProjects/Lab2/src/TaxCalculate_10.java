@@ -9,7 +9,7 @@
  */
 import java.util.*;
 
-public class TaxCalculate {
+public class TaxCalculate_10 {
 
     public static void main(String[] args) {
         double tax = 0, salary;
@@ -20,7 +20,7 @@ public class TaxCalculate {
             tax = salary * 0.1;
         } else if (salary <= 50000) {
             tax = salary * 0.05;
-        }   
+        }
         System.out.println("Total tax is " + tax);
     }
 }

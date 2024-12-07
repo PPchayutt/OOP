@@ -8,16 +8,13 @@
  * @author pitch
  */
 import java.util.*;
-public class TimeConverter {
+public class TaxCalculate_19 {
     public static void main(String[] args) {
-        double hours, mins, secs, totalmins;
+        double totalPrice, price;
         Scanner input = new Scanner(System.in);
-        System.out.print("Hours : ");
-        hours = input.nextDouble();
-        System.out.print("Mins : ");
-        mins = input.nextDouble();
-        totalmins = (hours * 60) + mins;
-        secs = totalmins * 60;
-        System.out.println("Secs = " + secs);
+        System.out.print("Enter price: ");
+        price = input.nextDouble();
+        totalPrice = price + (price * 0.07);
+        System.out.println("Total price is " + totalPrice);
     }
 }

@@ -7,7 +7,7 @@
  *
  * @author OPTO
  */
-public class SolutionFinder {
+public class SolutionFinder_13 {
     public static void main(String[] args) {
         double a = 4, b = 8, c = 3;
         double x1 = (-b + (Math.sqrt(b * b - (4 * a * c)))) / (2 * a);
