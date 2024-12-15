@@ -7,14 +7,19 @@
  *
  * @author pitch
  */
-public class demo {
+import java.util.*;
+
+public class Ex11 {
 
     public static void main(String[] args) {
-        for (int a = 1; a <= 10; a++) {
-            if (a % 2 == 0) {
-                System.out.print("A");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please insert a number : ");
+        int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            if (i % 5 == 0) {
+                System.out.print("/");
             } else {
-                System.out.print("B");
+                System.out.print("|");
             }
         }
     }
