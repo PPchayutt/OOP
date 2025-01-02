@@ -20,7 +20,7 @@ public class Main {
         p2.setName("Jame");
         p2.setTeam("Gryffindor");
         p2.setPlayerNumber(1);
-        p2.setPosition("fullback");
+        p2.setPosition("keeper");
         System.out.println("We are same position : " + p1.isSamePosition(p2));
         System.out.println("We are same team : " + p1.isSameTeam(p2));
     }
