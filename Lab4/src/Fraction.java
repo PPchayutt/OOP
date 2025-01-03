@@ -13,7 +13,7 @@ public class Fraction {
     public int btmN;
 
     public String toFraction() {
-        return "[" + topN + "/" + btmN + "]";
+        return topN + "/" + btmN;
     }
 
     public String toFloat() {
