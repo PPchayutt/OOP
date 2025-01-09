@@ -1,4 +1,4 @@
 # OOP-Source
 รวมวาร์ป OOP
 
-.java file location: Lab /src /[name].java
+The java files are locate at "Lab /src /[name].java"
