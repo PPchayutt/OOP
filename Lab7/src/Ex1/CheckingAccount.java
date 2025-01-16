@@ -40,14 +40,18 @@ public class CheckingAccount extends Account {
      */
     @Override
     public void withdraw(double a) {
-        if ((balance - a) >= 0) {
+        if (a < 0) {
+            System.out.println("Input number must be a positive integer.");
+            return;
+        }
+        if (balance >= a) {
             balance -= a;
             System.out.println(a + " baht is withdrawn from " + name + " and your credit balance is " + credit + ".");
-        } else if ((balance - a + credit) >= 0) {
-            setBalance(0);
+        } else if (balance + credit >= a) {
             credit -= (a - balance);
+            balance = 0;
             System.out.println(a + " baht is withdrawn from " + name + " and your credit balance is " + credit + ".");
-        } else if ((balance - a + credit) < 0) {
+        } else {
             System.out.println("Not enough money!");
         }
     }
@@ -59,6 +63,5 @@ public class CheckingAccount extends Account {
     @Override
     public String toString() {
         return "The " + getName() + " account has " + getBalance() + " baht and " + credit + " credits.";
-
     }
 }
