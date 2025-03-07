@@ -30,7 +30,10 @@ public class ChatDemo implements ActionListener, WindowListener {
         textArea.setEditable(false);
         textArea.setColumns(45);
         textArea.setRows(20);
+
         JScrollPane scrollPane = new JScrollPane(textArea);
+        scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         textField = new JTextField(45);
         Font thaiFont = new Font("Tahoma", Font.PLAIN, 14);
