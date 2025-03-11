@@ -9,5 +9,8 @@ package Ex1;
  * @author OPTO
  */
 public class Main {
-    
+
+    public static void main(String[] args) {
+        new PoringConstructor();
+    }
 }
